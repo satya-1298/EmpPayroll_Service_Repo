@@ -60,6 +60,29 @@ update Employee set PhoneNumber='9822657790', Address='chennai', Department='Ele
 update Employee set PhoneNumber='9847356222', Address='Hyderabad', Department='Management' where ID=3
 update Employee set PhoneNumber='9958726231', Address='Mumbai', Department='Sales' where ID=4
 update Employee set PhoneNumber='7828746343', Address='Banglore', Department='Developer' where ID=5
+
+/*****************UC9***************/
+
+
+Alter table Employee
+add Deductions float
+
+Alter table Employee
+add Taxable_Pay float
+
+Alter table Employee
+add Income_Tax float
+
+Alter table Employee
+add Net_Pay float
+select*from Employee
+Update Employee set Deductions=1500,Taxable_Pay=200,Income_Tax=1000,Net_Pay=2500 where Id=1
+Update Employee set Deductions=2500,Taxable_Pay=400,Income_Tax=2000,Net_Pay=1500 where Id=2
+Update Employee set  Deductions=1000,Taxable_Pay=500,Income_Tax=1500,Net_Pay=2000 where Id=3
+Update Employee set  Deductions=2200,Taxable_Pay=300,Income_Tax=1300,Net_Pay=3000 where Id=4
+Update Employee set Deductions=1800,Taxable_Pay=250,Income_Tax=1600,Net_Pay=2400 where Id=5
+
+exec sp_rename 'Employee.salary','Basic_Pay','Column';
  
 
   
