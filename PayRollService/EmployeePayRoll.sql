@@ -4,7 +4,7 @@ create table Employee
 Id int Identity,
 Name varchar(200),
 Salary varchar(20),
-Start_Date varchar(20)
+Start Date not null
 )
  select*from Employee
  /*************UC3************/
@@ -17,6 +17,9 @@ Start_Date varchar(20)
  /*************UC4************/
 select*from Employee
 
+/*************UC5************/
+select Salary from Employee where id=1
+Select salary From Employee where Start Between CAST('2018-02-20' as date)and getdate()
  
  
  
