@@ -14,6 +14,9 @@ Start_Date varchar(20)
  insert into Employee values('Akki','20000','2020-03-28')
  insert into Employee values('jack','35000','2018-02-20')
 
+ /*************UC4************/
+select*from Employee
+
  
  
  
