@@ -83,6 +83,10 @@ Update Employee set  Deductions=2200,Taxable_Pay=300,Income_Tax=1300,Net_Pay=300
 Update Employee set Deductions=1800,Taxable_Pay=250,Income_Tax=1600,Net_Pay=2400 where Id=5
 
 exec sp_rename 'Employee.salary','Basic_Pay','Column';
- 
 
+/*****************UC10****************/
+ 
+ insert into Employee values('Terissa','35000','2020-04-24','F','8655423455','Pune','Marketing',1000,300,2000,2400)
+  insert into Employee values('Terissa','25000','2023-01-09','F','9434523323','Gujarat','Sales',1500,500,1000,1400)
+  
   
