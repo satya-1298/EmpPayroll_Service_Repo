@@ -40,4 +40,26 @@ add Gender char(1)
  select min(Salary)as  minimum_male_salary from Employee Salary where Gender='M'  
  select max(Salary)as  maximum_male_salary from Employee Salary where Gender='M'  
 
+ /*****************UC8***********/
+ Alter table Employee 
+add PhoneNumber varchar(255) 
+
+Alter table Employee 
+add Address varchar(255) default 'Chennai';
+
+
+Alter table Employee
+add Department varchar(255) 
+Alter table Employee 
+add constraint df_Department
+default 'not known' for Department; 
+
+select*from Employee
+update Employee set PhoneNumber='1234567890', Address='Vizag', Department='Testing' where ID=1
+update Employee set PhoneNumber='9822657790', Address='chennai', Department='Electronics' where ID=2
+update Employee set PhoneNumber='9847356222', Address='Hyderabad', Department='Management' where ID=3
+update Employee set PhoneNumber='9958726231', Address='Mumbai', Department='Sales' where ID=4
+update Employee set PhoneNumber='7828746343', Address='Banglore', Department='Developer' where ID=5
+ 
+
   
