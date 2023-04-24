@@ -20,6 +20,14 @@ select*from Employee
 /*************UC5************/
 select Salary from Employee where id=1
 Select salary From Employee where Start Between CAST('2018-02-20' as date)and getdate()
- 
+
+/*************UC6************/
+alter table Employee
+add Gender char(1) 
+ Update  Employee set Gender='M' where Id=1
+ Update  Employee set Gender='F' where Id=2
+ Update  Employee set Gender='F' where Id=3
+ Update  Employee set Gender='F' where Id=4
+ Update  Employee set Gender='M' where Id=5
  
  
