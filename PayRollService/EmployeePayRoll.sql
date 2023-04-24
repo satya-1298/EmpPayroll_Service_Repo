@@ -3,7 +3,7 @@ create table Employee
 (
 Id int Identity,
 Name varchar(200),
-Salary varchar(20),
+Salary int,
 Start Date not null
 )
  select*from Employee
@@ -29,5 +29,15 @@ add Gender char(1)
  Update  Employee set Gender='F' where Id=3
  Update  Employee set Gender='F' where Id=4
  Update  Employee set Gender='M' where Id=5
- 
- 
+
+ /*************UC7************/
+ select sum(Salary)as sum_of_female_salary from Employee Salary where Gender='F'  
+ select avg(Salary)as Average_Female_salary from Employee Salary where Gender='F'  
+ select min(Salary)as minimum_Female_salary from Employee Salary where Gender='F'
+  select max(Salary)as maximum_Female_salary from Employee Salary where Gender='F'  
+ select sum(Salary)as  sum_male_salary from Employee Salary where Gender='M'  
+ select avg(Salary)as  Average_male_salary from Employee Salary where Gender='M'    
+ select min(Salary)as  minimum_male_salary from Employee Salary where Gender='M'  
+ select max(Salary)as  maximum_male_salary from Employee Salary where Gender='M'  
+
+  
